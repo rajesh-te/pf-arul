@@ -1,0 +1,153 @@
+.home {
+  position: relative;
+  background-color: rgb(14, 14, 14, 14);
+}
+.home-bg {
+  position: absolute;
+  /* overflow-x: hidden; */
+}
+.video-wrapper {
+  position: relative;
+}
+
+.video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.home .container .col-lg {
+  height: 900px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.home .container .col-lg:nth-child(2) {
+  align-items: flex-end;
+  justify-content: center;
+}
+.home .container .col-lg:nth-child(1) {
+  z-index: 2;
+}
+
+.home-asset {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.text-contents-over {
+  width: 300px;
+  padding: 30px;
+  background-color: rgba(22, 22, 22, 0.9);
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+.text-contents-over h3 {
+  font-size: 25px;
+}
+.text-contents-over p {
+  font-size: 15px;
+}
+.img-wrapper {
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  background-image: url('assets/FOTO_BG_PUTIH.png');
+  background-size: cover;
+}
+
+.arul {
+  filter: saturate(0.4);
+  max-width: 600px;
+}
+/* .container #download-cv {
+  color: inherit;
+}
+.container #download-cv:hover {
+  color: inherit;
+  background-color: aqua;
+} */
+
+@media screen and (max-width: 991px) {
+  .home {
+    height: 1080px;
+    margin-bottom: 280px;
+    overflow-x: hidden;
+  }
+  .home .container .col-lg:nth-child(2) {
+    position: absolute;
+    top: 250px;
+  }
+  .home .container .col-lg {
+    height: 700px;
+  }
+  .home-bg .row .video-wrapper .video-content {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .home .container .col-lg:nth-child(2) {
+    top: 180px;
+  }
+  .home {
+    height: 880px;
+    margin-bottom: 280px;
+    overflow: hidden;
+  }
+  .home-bg .row .video-wrapper .video-content {
+    max-width: 500px;
+    margin: auto;
+    overflow-x: hidden;
+  }
+  .arul {
+    margin-top: 100px;
+  }
+  .text-contents {
+    margin-top: -20px;
+  }
+
+  .home-asset {
+    width: 360px;
+    height: 340px;
+  }
+  .text-contents-over {
+    width: 200px;
+    padding: 20px;
+  }
+  .text-contents-over h3 {
+    font-size: 16px;
+  }
+  .text-contents-over p {
+    font-size: 10px;
+  }
+  .img-wrapper {
+    width: 200px;
+    height: 280px;
+  }
+  .container {
+    margin-bottom: 100px;
+  }
+
+  /* .home .container {
+    position: absolute;
+  } */
+
+  /* .text-contents-over {
+    position: static;
+  } */
+}
+
+/* * {
+    border: .4px solid red;
+    
+
+} */

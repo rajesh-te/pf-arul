@@ -1,0 +1,32 @@
+.hero {
+  overflow: hidden;
+  height: 1100px;
+  display: flex;
+  align-items: center;
+  margin: 100px 0;
+}
+.kocak {
+  width: 5000px;
+  box-sizing: border-box;
+}
+.clip {
+  width: 5000px;
+  position: relative;
+  justify-content: flex-start;
+  transform: translateX(-100%);
+}
+.quote {
+  position: absolute;
+  padding: 0 3%;
+  top: 100px;
+  color: rgba(255, 255, 255, 0);
+}
+
+@media screen and (max-width: 991px) {
+  .hero {
+    height: 600px;
+  }
+  .clip {
+    transform: translateX(-150%);
+  }
+}
